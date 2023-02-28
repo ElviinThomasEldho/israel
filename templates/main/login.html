@@ -1,0 +1,58 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Login</title>
+    <meta name="description" content="Magi Holidays Israel">
+    <meta name="author" content="Elviin Thomas Eldho">
+
+    <meta property="og:title" content="Magi Holidays Israel">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.magiholidays.ge/">
+    <meta property="og:description" content="Portfolio Website for Magi Holidays Israel">
+    <meta property="og:image" content="image.png">
+
+    <link rel="icon" href="src/img/favicon.ico">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Inter+Tight:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="{%  static 'css\form.css' %}" />
+
+    <script defer src="/js/scripts.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+
+<body>
+    <section>
+        <form method="POST" action="" enctype="multipart/form-data" style="text-align: center;">
+            {% csrf_token %}
+            <h2>Welcome Back!</h2>
+            <p>Enter your username and password below to login</p>
+            <hr class="hr-primary">
+            <label class="title" for="username">Username</label><br>
+            <input type="text" name="username"><br>
+
+            <label class="title" for="password">Password</label><br>
+            <input type="password" name="password">
+            </tr>
+            {% for message in messages %}
+            <p>{{message}}</p><br>
+            {% endfor %}
+
+            <button class="btn-primary" type="submit" name="Submit">Login</button>
+        </form>
+
+    </section>
+</body>
+
+</html>

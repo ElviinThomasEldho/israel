@@ -1,0 +1,181 @@
+{% load static %}
+<section id="hero-en" class="hero section-dark" id="hero-en">
+  <video class="background-video" autoplay loop muted>
+    <source src="{% static 'vid\hero-bg.mp4' %}" type="video/mp4">
+  </video>
+  <video class="background-video mobile" autoplay loop muted>
+    <source src="{% static 'vid\hero-bgm.mp4' %}" type="video/mp4">
+  </video>
+  <div class="content-hero">
+    <h2 style="margin: 0;">Be Wise</h2>
+    <h1>Follow The Star</h1>
+    <a class="btn-primary" href="#contact-en">Book Now</a>
+  </div>
+</section>
+
+<section id="about-en" class="section section-neutral">
+  <div class="about">
+    <img src="{% static 'img\israel-5.png' %}" alt="israel-5" class="img-about">
+    <div class="content-about">
+      <h2>Why Magi?</h2>
+      <p class="text-about">{{ content.about }}</p>
+
+      <div class="feature-group">
+        <div class="feature">
+          <img src="{% static 'icons\clock.png' %}" alt="on-time" class="feature-icon">
+          <h4 class="feature-name">On Time</h4>
+        </div>
+        <div class="feature">
+          <img src="{% static 'icons\support.png' %}" alt="customer-support" class="feature-icon">
+          <h4 class="feature-name">Customer Support</h4>
+        </div>
+        <div class="feature">
+          <img src="{% static 'icons\worldwide.png' %}" alt="global-network" class="feature-icon">
+          <h4 class="feature-name">Global Network</h4>
+        </div>
+        <div class="feature">
+          <img src="{% static 'icons\hand.png' %}" alt="value-for-money" class="feature-icon">
+          <h4 class="feature-name">Value for Money</h4>
+        </div>
+        <div class="feature">
+          <img src="{% static 'icons\customer.png' %}" alt="customer-first" class="feature-icon">
+          <h4 class="feature-name">Customer First</h4>
+        </div>
+        <div class="feature">
+          <img src="{% static 'icons\help.png' %}" alt="local-guides" class="feature-icon">
+          <h4 class="feature-name">Local Guides</h4>
+        </div>
+      </div>
+    </div>
+</section>
+
+<section id="gallery-en" class="section section-primary-2 ">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap" rel="stylesheet">
+
+  <div class="gallery">
+    <div class="gallery__column">
+      <a href="https://www.pexels.com/photo/person-sitting-on-mountain-cliff-1659438/" target="_blank"
+        class="gallery__link">
+        <figure class="gallery__thumb">
+          <img src="{% static 'img/gallery2.jpg' %}" alt="Photo by M Venter" class="gallery__image">
+          <figcaption class="gallery__caption">Photo by M Venter</figcaption>
+        </figure>
+      </a>
+      <a href="https://www.pexels.com/photo/man-and-woman-walks-on-dock-1268855/" target="_blank" class="gallery__link">
+        <figure class="gallery__thumb">
+          <img src="{% static 'img/gallery3.jpg' %}" alt="Photo by Aleksandar Pasaric" class="gallery__image">
+          <figcaption class="gallery__caption">Photo by Aleksandar Pasaric</figcaption>
+        </figure>
+      </a>
+      <a href="https://www.pexels.com/photo/person-sitting-on-mountain-cliff-1659438/" target="_blank"
+        class="gallery__link">
+        <figure class="gallery__thumb">
+          <img src="{% static 'img/gallery2.jpg' %}" alt="Photo by M Venter" class="gallery__image">
+          <figcaption class="gallery__caption">Photo by M Venter</figcaption>
+        </figure>
+      </a>
+      <a href="https://www.pexels.com/photo/man-and-woman-walks-on-dock-1268855/" target="_blank" class="gallery__link">
+        <figure class="gallery__thumb">
+          <img src="{% static 'img/gallery1.jpg' %}" alt="Photo by Asad Photo Maldives" class="gallery__image">
+          <figcaption class="gallery__caption">Photo by Asad Photo Maldives</figcaption>
+        </figure>
+      </a>
+    </div>
+    <div class="gallery__column">
+      <a href="https://www.pexels.com/photo/saint-basil-s-cathedral-753339/" target="_blank" class="gallery__link">
+        <figure class="gallery__thumb">
+          <img src="{% static 'img/gallery10.jpg' %}" alt="Photo by Julius Silver" class="gallery__image">
+          <figcaption class="gallery__caption">Photo by Julius Silver</figcaption>
+        </figure>
+      </a>
+      <a href="https://www.pexels.com/photo/gray-and-brown-boat-traveling-on-man-made-river-586687/" target="_blank"
+        class="gallery__link">
+        <figure class="gallery__thumb">
+          <img src="{% static 'img/gallery11.jpg' %}" alt="Photo by David Bartus" class="gallery__image">
+          <figcaption class="gallery__caption">Photo by David Bartus</figcaption>
+        </figure>
+      </a>
+    </div>
+    <div class="gallery__column">
+      <a href="https://www.pexels.com/photo/maldives-island-1450340/" target="_blank" class="gallery__link">
+        <figure class="gallery__thumb">
+          <img src="{% static 'img/gallery4.jpg' %}" alt="Photo by Asad Photo Maldives" class="gallery__image">
+          <figcaption class="gallery__caption">Photo by Asad Photo Maldives</figcaption>
+        </figure>
+      </a>
+      <a href="https://www.pexels.com/photo/woman-taking-pictures-of-ruins-2087391/" target="_blank"
+        class="gallery__link">
+        <figure class="gallery__thumb">
+          <img src="{% static 'img/gallery5.jpg' %}" alt="Photo by Haley Black" class="gallery__image">
+          <figcaption class="gallery__caption">Photo by Haley Black</figcaption>
+        </figure>
+      </a>
+      <a href="https://www.pexels.com/photo/bridge-near-waterfall-358457/" target="_blank" class="gallery__link">
+        <figure class="gallery__thumb">
+          <img src="{% static 'img/gallery9.jpg' %}" alt="Photo by Pixabay" class="gallery__image">
+          <figcaption class="gallery__caption">Photo by Pixabay</figcaption>
+        </figure>
+      </a>
+    </div>
+    <div class="gallery__column">
+      <a href="https://www.pexels.com/photo/boats-and-body-of-water-417344/" target="_blank" class="gallery__link">
+        <figure class="gallery__thumb">
+          <img src="{% static 'img/gallery7.jpg' %}" alt="Photo by Pixabay" class="gallery__image">
+          <figcaption class="gallery__caption">Photo by Pixabay</figcaption>
+        </figure>
+      </a>
+      <a href="https://www.pexels.com/photo/derawar-fort-at-sunset-815880/" target="_blank" class="gallery__link">
+        <figure class="gallery__thumb">
+          <img src="{% static 'img/gallery8.jpg' %}" alt="Photo by Syed Hasan Mehdi" class="gallery__image">
+          <figcaption class="gallery__caption">Photo by Syed Hasan Mehdi</figcaption>
+        </figure>
+      </a>
+      <a href="https://www.pexels.com/photo/photo-of-a-man-sitting-under-the-tree-737586/" target="_blank"
+        class="gallery__link">
+        <figure class="gallery__thumb">
+          <img src="{% static 'img/gallery6.jpg' %}" alt="Photo by Admiral General M. " class="gallery__image">
+          <figcaption class="gallery__caption">Photo by Admiral General M. ⭐⭐⭐⭐⭐ GodShepherdly
+          </figcaption>
+        </figure>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="services-en" class="section section-primary section-dark">
+  <h2>Our Services</h2>
+  <hr class="hr-neutral">
+  <div class="service-group">
+    {% for service in services %}
+    <div class="service">
+      <img src="{{ service.image.url }}" alt="{{service.title}}" class="service-img">
+      <h5 class="service-title">{{service.title}}</h5>
+      <p class="service-desc">{{service.desc}}
+      </p>
+    </div>
+    {% endfor %}
+  </div>
+  <img src="{% static 'img\israel-3.png' %}" alt="israel-3" class="img-service">
+</section>
+
+<section id="reviews-en" class="section section-neutral">
+  <img src="{% static 'img\israel-4.png' %}" alt="israel-4" class="img-reviews">
+  <h2>What do our customers say?</h2>
+  <div class="review-group">
+    {% for review in reviews %}
+    <div class="review">
+      <div class="customer-container">
+        <img src="{{review.image.url}}" alt="{{review.name}}" class="customer-img">
+        <p class="customer-name">{{review.name}}</p>
+        <p class="customer-job">{{review.occupation}}</p>
+      </div>
+      <div class="review-container">
+        <p class="review-date">{{review.dateOfTravel}}</p>
+        <p class="review-title">{{review.title}}</p>
+        <hr class="hr-primary">
+        <p class="review-desc">{{review.desc}}</p>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
